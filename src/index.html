@@ -13,27 +13,14 @@
 			</header>
 
 			<section class="main">
-				<input id="toggle-all" class="toggle-all" type="checkbox">
-				<label for="toggle-all">Mark all as complete</label>
+
+				<span class="toggle-all-container">
+					<input id="toggle-all" class="toggle-all" type="checkbox">
+					<label for="toggle-all">Mark all as complete</label>
+				</span>
+				
 
 				<ul class="todo-list">
-					<li class="todo-item completed">
-						<input type="checkbox" class="toggle" id="todo-1" checked>
-						<label for="todo-1">HTML</label>
-						<button class="destroy"></button>
-					</li>
-
-					<li class="todo-item completed">
-						<input type="checkbox" class="toggle" id="todo-2" checked>
-						<label for="todo-2">CSS</label>
-						<button class="destroy"></button>
-					</li>
-
-					<li class="todo-item">
-						<input type="checkbox" class="toggle" id="todo-3">
-						<label for="todo-3">Javascript</label>
-						<button class="destroy"></button>
-					</li>
 				</ul>
 
 				<footer class="footer">
@@ -43,15 +30,16 @@
 
 					<ul class="filters">
 						<li>
-							<a href="#/" class="selected">All</a>
+							<a href="#/" class="selected" data-filter="all">All</a>
 						</li>
 						<li>
-							<a href="#/active">Active</a>
+							<a href="#/active" data-filter="active">Active</a>
 						</li>
 						<li>
-							<a href="#/completed">Completed</a>
+							<a href="#/completed" data-filter="completed">Completed</a>
 						</li>
 					</ul>
+
 					<button class="clear-completed">Clear completed</button>
 				</footer>
 			</section>
